@@ -1,0 +1,173 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: red;
+    overflow: hidden;
+  
+    
+}
+.gameContainer{
+    
+    background-image: url("Home.jpg");
+    background-repeat: no-repeat;
+    background-size: 220vh 100vh;
+    height: 110vh;
+    width: 220vh;
+
+}
+
+.gameOver{
+    position: relative;
+    top: 230px;
+   
+    text-align: center;
+    visibility: hidden;
+    z-index: 9;
+    font-family: fantasy;
+    font-size: 180px;
+    opacity: 90%;
+    color: rgb(231, 48, 48);
+}
+
+
+#scoreCont{
+    position: absolute;
+    top: 10px;
+    left: 1100px;
+    border: 2px solid brown;
+    /* z-index: 3; */
+    padding: 10px;
+    width: 112px;
+    font-family: sans-serif;
+    z-index: 8;
+   
+
+}
+
+.Nobita img{
+    height: 205px;
+    width: 5vw;
+    position: absolute;
+    bottom: 20px;
+    right: 1100px;
+    z-index: 10;
+  
+}
+
+.Gian img{
+    height: 200px;
+    width: 9.7vw;
+    position: absolute;
+    bottom: 20px;
+    right: 200px;
+    z-index: 10;
+}
+
+.doraemon img{
+    height: 160px;
+    width: 8vw;
+    position: absolute;
+    top: 20px;
+    left: 650px;
+    animation: doraemonfly linear .83s infinite;
+}
+
+.label img{
+    height: 500px;
+    width: 75vw;
+    position: absolute;
+    bottom: 270px;
+    right: 450px;
+    
+  
+}
+
+.balloon1 img{
+    height: 300px;
+    width: 30vw;
+    position: absolute;
+    bottom: 10px;
+    right: 1050px;
+    animation: BalloonMove linear 6s infinite;
+ 
+  
+}
+
+.balloon2 img{
+    height: 300px;
+    width: 30vw;
+    position: absolute;
+    bottom: 10px;
+    left: 1050px;
+    animation: BalloonMove linear 6s infinite;
+  
+}
+
+
+@keyframes doraemonfly
+{
+    0%{
+        transform: translateX(-7px)
+        translateY(-5px);
+    }
+    50%{
+        transform: translateX(7px)
+        translateY(5px);
+    }
+    100%{
+        transform: translateX(-7px)
+        translateY(-5px);
+    }
+}
+
+.bani1 img{
+    animation: BalloonMove linear 6s infinite;
+}
+ 
+.bani2 img{
+    animation: BalloonMove linear 6s infinite;
+}
+
+@keyframes BalloonMove{
+    0%{
+        top: 100vw;
+    }
+    100%{
+        top: -30vw;
+    }
+}
+
+.animateNobita img{
+    animation: Nobita .7s linear;
+}
+
+@keyframes Nobita{
+    0%{
+        bottom: 20px;
+
+    }
+    50%{
+        bottom: 400px;
+
+    }
+    100%{
+        bottom: 20px;
+        
+    }
+}
+
+.ObsGian img{
+    animation: ObsGian linear 8s infinite;
+}
+
+
+@keyframes ObsGian{
+    0%{
+        left: 100vw;
+    }
+    100%{
+        left: -10vw;
+    }
+}
